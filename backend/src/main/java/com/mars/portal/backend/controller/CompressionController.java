@@ -27,7 +27,7 @@ public class CompressionController {
 
         try {
             CompressionResult result = compressionService.compress(file, algorithm);
-            return ResponseEntity.ok(result);  // ✅ return result JSON including filename
+            return ResponseEntity.ok(result);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         } catch (Exception e) {
@@ -48,7 +48,7 @@ public class CompressionController {
     }
 
 
-    // ✅ This method must be OUTSIDE compressFile
+
     @GetMapping("/download/{filename}")
     public ResponseEntity<Resource> downloadFile(@PathVariable String filename) {
         try {

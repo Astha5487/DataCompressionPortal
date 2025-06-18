@@ -64,7 +64,7 @@ public class LZ77Compressor implements Compressor {
             cursor += matchLength + 1;
         }
 
-        // ✅ Save to compressed_files
+
         File outputDir = new File("compressed_files");
         outputDir.mkdirs();
         File output = new File(outputDir, "compressed_lz77.txt");

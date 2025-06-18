@@ -22,7 +22,7 @@ public class CompressionService {
     public CompressionService(List<Compressor> compressors) {
         this.compressorMap = new HashMap<>();
         for (Compressor c : compressors) {
-            String name = c.getClass().getAnnotation(Service.class).value(); // Use @Service("lz77") etc.
+            String name = c.getClass().getAnnotation(Service.class).value();
             compressorMap.put(name.toLowerCase(), c);
         }
     }
@@ -47,7 +47,7 @@ public class CompressionService {
         double compressionRatio = originalSize == 0 ? 0 : (double) compressedSize / originalSize;
         double speed = timeTaken == 0 ? 0 : (originalSize / 1_000_000.0) / (timeTaken / 1000.0); // MB/s
 
-        String compressedFileName = compressedFile.getName(); // ✅ Fix: Get filename from the File object
+        String compressedFileName = compressedFile.getName();
 
         CompressionResult result = new CompressionResult();
         result.setCompressedFile(compressedFile.getAbsolutePath());
@@ -86,15 +86,15 @@ public class CompressionService {
         Files.copy(tempOutput.toPath(), finalDecompressedFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 
         long decompressedSize = finalDecompressedFile.length();
-        long timeTaken = System.currentTimeMillis() - input.lastModified(); // Or use start-end if needed
+        long timeTaken = System.currentTimeMillis() - input.lastModified();
 
         CompressionResult result = new CompressionResult();
         result.setCompressedFile(finalDecompressedFile.getAbsolutePath());
         result.setOriginalSize(originalSize);
-        result.setCompressedSize(decompressedSize); // this is size after decompression
+        result.setCompressedSize(decompressedSize);
         result.setProcessingTimeMillis(timeTaken);
         result.setAlgorithm(algorithm);
-        result.setFileName(finalDecompressedFile.getName()); // for downloading via endpoint
+        result.setFileName(finalDecompressedFile.getName());
 
         return result;
     }

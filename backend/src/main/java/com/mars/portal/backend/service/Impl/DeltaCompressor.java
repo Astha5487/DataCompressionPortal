@@ -14,7 +14,7 @@ public class DeltaCompressor implements Compressor {
     public File compress(File inputFile) throws IOException {
         List<Integer> deltas = new ArrayList<>();
 
-        // ✅ Save inside compressed_files folder
+
         File outputDir = new File("compressed_files");
         outputDir.mkdirs();
         File compressedFile = new File(outputDir, "compressed_delta.txt");

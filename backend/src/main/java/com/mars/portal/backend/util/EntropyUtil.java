@@ -11,6 +11,6 @@ public class EntropyUtil {
             double p = (double) count / length;
             entropy -= p * (Math.log(p) / Math.log(2));
         }
-        return entropy; // bits per symbol
+        return entropy;
     }
 }

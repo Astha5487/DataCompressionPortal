@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cea73dee-21f3-42a1-a963-ad326117f1b8" name="Changes" comment="" />
+    <list default="true" id="cea73dee-21f3-42a1-a963-ad326117f1b8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/controller/CompressionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/controller/CompressionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/CompressionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/CompressionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/DeltaCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/DeltaCompressor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/HuffmanCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/HuffmanCompressor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/LZ77Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/service/Impl/LZ77Compressor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/util/EntropyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mars/portal/backend/util/EntropyUtil.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3

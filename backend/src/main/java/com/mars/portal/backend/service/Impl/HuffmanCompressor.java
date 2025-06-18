@@ -60,7 +60,7 @@ public class HuffmanCompressor implements Compressor {
             encoded.append(huffmanCodes.get(c));
         }
 
-        // ✅ Ensure file is saved to `compressed_files/`
+
         File outputDir = new File("compressed_files");
         outputDir.mkdirs();
         File output = new File(outputDir, "compressed_huffman.txt");
