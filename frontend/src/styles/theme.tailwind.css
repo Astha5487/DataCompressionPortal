@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom classes (optional) */
+.navbar-heading {
+  @apply text-3xl font-bold text-center text-gray-900 dark:text-white;
+}

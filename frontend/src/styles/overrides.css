@@ -1,0 +1,21 @@
+/* overrides.css */
+.navbar-fancy {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .navbar-fancy a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+  }
+  
+  .navbar-fancy a:hover {
+    color: #ffe066;
+  }
+  
