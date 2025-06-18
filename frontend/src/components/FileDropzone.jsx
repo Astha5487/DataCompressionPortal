@@ -27,8 +27,12 @@ const FileDropzone = ({ setResults }) => {
 
     try {
       const endpoint = mode === "compress" ? "compress" : "decompress";
-      const response = await axios.post(`${API_BASE_URL}/${endpoint}`, formData);
-
+      const response = await axios.post(`${API_BASE_URL}/${endpoint}`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      
       const {
         fileName,
         originalSize,
