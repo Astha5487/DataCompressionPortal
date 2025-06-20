@@ -67,7 +67,6 @@ If the file has high entropy or is not suitable for compression, a warning is sh
 ### ℹ️ About Section
 
 This portal is a full-stack web application designed to demonstrate the principles of file compression and decompression using a variety of popular algorithms. It aims to educate users on how different techniques perform across various types of data by providing real-time compression statistics and visual comparisons.
-
 The project highlights the strengths and limitations of each algorithm (like Huffman, LZ77, RLE, and Delta) and helps users understand which algorithm is most suitable for a given file type or data pattern. With a clean UI and detailed feedback, it's both a learning tool and a practical utility for handling file size optimization.
 ---
 
