@@ -1,73 +1,77 @@
-# Data Compression & Decompression Portal
-A full-stack web application that allows users to compress and decompress files using various compression algorithms including Huffman, LZ77, Delta, and RLE. It also provides insightful compression statistics, visual comparisons, and a clean user interface with light/dark mode toggle.
+# 📦 Data Compression & Decompression Portal
 
-✨ Features
-✅ Upload any file and compress or decompress it using selected algorithm
-✅ Compression statistics: Original size, Compressed size, Entropy, Compression Ratio, Speed, Processing Time
-✅ Algorithm comparison charts using bar graphs
-✅ Smart warning if compression is not effective (e.g. for random or high-entropy data)
-✅ Responsive UI with dark/light mode toggle
-✅ Easy download of the processed file
-✅ Built using modern web technologies
+A full-stack web application that allows users to **compress** and **decompress files** using various compression algorithms including **Huffman**, **LZ77**, **Delta**, and **RLE**. It also provides insightful compression statistics, visual comparisons, and a clean user interface with light/dark mode toggle.
 
-🧪 Steps to Use the Portal
-Navigate to the Upload Section
+---
 
-Click on “Choose File” to upload a text, image, or binary file.
+## ✨ Features
 
-Select your preferred compression algorithm from the dropdown:
+- ✅ Upload any file and compress or decompress it using selected algorithm  
+- ✅ Compression statistics: Original size, Compressed size, Entropy, Compression Ratio, Speed, Processing Time  
+- ✅ Algorithm comparison charts using bar graphs  
+- ✅ Smart warning if compression is not effective (e.g. for random or high-entropy data)  
+- ✅ Responsive UI with dark/light mode toggle  
+- ✅ Easy download of the processed file  
+- ✅ Built using modern web technologies
 
-Huffman
+---
 
-LZ77
+## 🧠 Compression Algorithms Supported
 
-RLE
+- **Huffman Coding** – Tree-based entropy encoding  
+- **LZ77** – Sliding window dictionary compression  
+- **Delta Encoding** – Efficient for numeric sequences  
+- **RLE (Run-Length Encoding)** – Best for repeating data
 
-Delta
+---
 
-Choose an Action
+## 🖥️ Tech Stack
 
-Click Compress File to apply the selected compression algorithm.
+| Frontend | Backend     | Styling      | Charts     |
+|----------|-------------|--------------|------------|
+| React    | Spring Boot | Tailwind CSS | Recharts   |
 
-Click Decompress File if your uploaded file is already compressed.
+---
 
-View Compression Statistics
+## 🚀 How to Use
 
-After processing, navigate to the Statistics section.
+### 🔼 Upload Section
 
-You'll see a comparison chart of:
+1. Click on **"Choose File"** to upload any file (text, image, binary).
+2. Select a **compression algorithm** from the dropdown:
+   - Huffman Coding
+   - LZ77
+   - RLE
+   - Delta Encoding
+3. Choose between **Compress** or **Decompress** based on your requirement.
+4. Click the button to process the file.
+5. Once done, download the compressed or decompressed file using the provided link.
 
-📉 Compression Ratio
+---
 
-⚡ Speed (MB/s)
+### 📊 Statistics Section
 
-🧠 Entropy
+After compression, you will see:
 
-The stats help you evaluate algorithm performance on your file.
+- 📏 **Original Size** vs. **Compressed Size**
+- 📉 **Compression Ratio**
+- 🔄 **Processing Time**
+- ⚙️ **Speed**
+- 🔢 **Entropy**
+- 📊 **Visual comparison** of different algorithms in bar charts
 
-Download Result
+If the file has high entropy or is not suitable for compression, a warning is shown.
 
-A link is provided to download the compressed or decompressed file.
+---
 
-Understand the Project
+### ℹ️ About Section
 
-Visit the About section to read the project overview and tech stack used.
+This portal is an educational and practical tool built by a college web development club to demonstrate how file compression works. It supports multiple algorithms, provides comparative insights, and helps users understand the trade-offs between different methods.
 
-🛠️ Tech Stack
-Frontend	Backend	Styling	Charts
-React	Spring Boot	Tailwind CSS	Recharts
+---
 
-🧠 Compression Algorithms Supported
-Huffman Coding – Tree-based entropy encoding
+## 📸 Sample Output
 
-LZ77 – Sliding window dictionary compression
-
-Delta Encoding – Efficient for numeric sequences
-
-RLE (Run-Length Encoding) – Best for repeating data
-
-📊 Sample Output
-📈 Compression Result
 Algorithm: Huffman
 Original Size: 1000 bytes
 Compressed Size: 6314 bytes
