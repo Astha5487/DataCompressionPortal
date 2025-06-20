@@ -1,4 +1,4 @@
- Data Compression & Decompression Portal
+📦 Data Compression & Decompression Portal
 A full-stack web application that allows users to compress and decompress files using various compression algorithms including Huffman, LZ77, Delta, and RLE. It also provides insightful compression statistics, visual comparisons, and a clean user interface with light/dark mode toggle.
 
 ✨ Features
